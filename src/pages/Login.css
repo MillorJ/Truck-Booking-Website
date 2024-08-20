@@ -1,0 +1,92 @@
+#root {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+
+
+.loginform{
+padding: 20px;
+background-color: rgb(170, 34, 34);
+border: none;
+border-radius: 10px;
+box-shadow: 0 10px 10px 0 rgb(17, 21, 21);
+}
+form label{
+margin-bottom: 20px;
+font-weight: bold;
+color: rgb(255, 255, 255);
+}
+
+
+
+.login, .createbutton{
+margin-left: 10px;
+margin-right: 10px;
+padding-bottom: 10px;
+color: white;
+}
+
+.loginField{
+margin-bottom: 20px;
+}
+
+form input[type="text"], input[type="email"], input[type="password"]{
+width: 450px;
+padding: 10px;
+border: none;
+border-radius: 5px;
+margin-top: 20px;
+display: block;
+}
+
+.text-error{
+color: rgb(144, 144, 144);
+}
+.formContain{
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+gap: 20px;
+height: 100vh;
+}
+
+.logButtons{
+display: flex;
+justify-content: center;
+align-items: center;
+gap: 20px;
+
+}
+.loginButton{
+padding: 10px;
+border: none;
+border-radius: 5px;
+font-weight: bold;
+cursor: pointer;
+color: white;
+text-decoration: none;
+}
+#logButton{
+width: 90px;
+}
+.loginButton:hover{
+color: rgb(170, 34, 34);
+}
+
+
+.loginAdmin{
+padding: 10px;
+border: none;
+border-radius: 5px;
+font-weight: bold;
+cursor: pointer;
+color: white;
+text-decoration: none;
+}
+
+.loginAdmin:hover{
+color: rgb(170, 34, 34);
+}

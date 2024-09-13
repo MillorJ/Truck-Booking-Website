@@ -26,6 +26,10 @@ form label{
 
 
 
+form input[type="text"], 
+
+
+
 .login, .createbutton{
 margin-left: 10px;
 margin-right: 10px;
@@ -37,14 +41,6 @@ color: white;
 margin-bottom: 20px;
 }
 
-form input[type="text"], input[type="email"], input[type="password"]{
-width: 450px;
-padding: 10px;
-border: none;
-border-radius: 5px;
-margin-top: 20px;
-display: block;
-}
 
 .text-error{
 color: rgb(144, 144, 144);

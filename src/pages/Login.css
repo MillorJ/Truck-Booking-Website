@@ -66,6 +66,7 @@ align-items: center;
 gap: 1rem;
 height: 100vh;
 background: #121212;
+padding: 2rem;
 }
 
 .logButtons{
@@ -75,15 +76,22 @@ align-items: center;
 gap: 20px;
 
 }
-.loginButton{
-padding: 10px;
-border: none;
-border-radius: 5px;
-font-weight: bold;
-cursor: pointer;
-color: white;
-text-decoration: none;
+/* Button Styles */
+.loginButton, .loginAdmin {
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    color: #fff;
+    background-color: #d9534f; /* Bootstrap Danger Color */
+    text-decoration: none;
+    transition: background-color 0.3s, color 0.3s;
+    font-size: 1rem;
+    display: inline-block;
+    text-align: center;
 }
+
 #logButton{
 width: 90px;
 }
@@ -92,15 +100,6 @@ color: rgb(170, 34, 34);
 }
 
 
-.loginAdmin{
-padding: 10px;
-border: none;
-border-radius: 5px;
-font-weight: bold;
-cursor: pointer;
-color: white;
-text-decoration: none;
-}
 
 .loginAdmin:hover{
 color: rgb(170, 34, 34);

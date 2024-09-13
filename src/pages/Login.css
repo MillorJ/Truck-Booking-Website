@@ -31,6 +31,7 @@ form input[type="email"],
 form input[type="password"] {
     width: calc(100% - 20px); /* Full width minus padding */
     padding: 0.75rem;
+    border: 1px solid #444; /* Dark border for better visibility */
 
 
 .login, .createbutton{

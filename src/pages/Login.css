@@ -56,12 +56,14 @@ margin-bottom: 20px;
     color: #ff6f6f; /* Noticeable error color */
     font-size: 0.875rem; /* Slightly smaller text for errors */
 }
+
+
 .formContain{
 display: flex;
 flex-direction: column;
 justify-content: center;
 align-items: center;
-gap: 20px;
+gap: 1rem;
 height: 100vh;
 }
 

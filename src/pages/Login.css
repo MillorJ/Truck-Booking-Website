@@ -33,6 +33,7 @@ form input[type="password"] {
     padding: 0.75rem;
     border: 1px solid #444; /* Dark border for better visibility */
     border-radius: 8px;
+    margin-top: 0.5rem;
 
 
 .login, .createbutton{

@@ -95,12 +95,7 @@ gap: 20px;
 #logButton{
 width: 90px;
 }
-.loginButton:hover{
-color: rgb(170, 34, 34);
-}
-
-
-
-.loginAdmin:hover{
-color: rgb(170, 34, 34);
+.loginButton:hover, .loginAdmin:hover {
+    background-color: #c9302c;
+    color: #fff;
 }

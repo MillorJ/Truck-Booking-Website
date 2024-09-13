@@ -34,6 +34,7 @@ form input[type="password"] {
     border: 1px solid #444; /* Dark border for better visibility */
     border-radius: 8px;
     margin-top: 0.5rem;
+    background-color: #333; /* Darker background for fields */
 
 
 .login, .createbutton{

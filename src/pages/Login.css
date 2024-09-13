@@ -28,7 +28,7 @@ form label{
 
 form input[type="text"], 
 form input[type="email"], 
-
+form input[type="password"]
 
 
 .login, .createbutton{

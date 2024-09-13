@@ -5,15 +5,10 @@
     padding: 2rem;
 }
 
-
-
 .loginform{
-padding: 20px;
-background-color: rgb(170, 34, 34);
-border: none;
-border-radius: 10px;
-box-shadow: 0 10px 10px 0 rgb(17, 21, 21);
+    padding: 2rem;
 }
+
 form label{
 margin-bottom: 20px;
 font-weight: bold;

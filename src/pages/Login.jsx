@@ -1,39 +1,41 @@
 import { Link, useNavigate } from "react-router-dom";
 import { useState } from "react";
-import Api from "../lib/api"; // CHECK THIS FILE!!!!!!
 
-const Login = ({setUser}) => {
-
-  const [userData, setUserData] = useState({email: '', password: ''})
-  const navigate = useNavigate()
+const Login = ({ setUser }) => {
+  const [userData, setUserData] = useState({ email: '', password: '' });
+  const navigate = useNavigate();
 
   const handleLogin = async () => {
     try {
-      const response = await Api().post('login', {
-        email: userData.email,
-        password: userData.password
-      })
+      // Bypass the API and simulate a successful login
+      const fakeResponse = {
+        status: 200,
+        data: {
+          accessToken: "fakeToken123",
+          user: {
+            email: userData.email,
+            name: "User"
+          }
+        }
+      };
 
-      // meaning, account is active!!!!!
-      console.log(response)
-      if (response.status === 200) {
-        // handle anything here, then redirect...
-        localStorage.setItem('token', response.data.accessToken)
-        alert('LOGGED IN.')
-        setUser(response.data.user)
-        navigate('/client')
+      // Assume login is always successful
+      console.log(fakeResponse);
+      if (fakeResponse.status === 200) {
+        localStorage.setItem('token', fakeResponse.data.accessToken);
+        alert('LOGGED IN.');
+        setUser(fakeResponse.data.user);
+        navigate('/client');
+      } else {
+        console.log(fakeResponse.status);
+        console.log('CANNOT LOG IN.');
       }
-      else{
-        console.log(response.status)
-        console.log('CANNOT LOG IN.')
-      }
-
-    } catch(e) {
-      // handle failed log in here!!!!
+    } catch (e) {
+      // Handle any unexpected errors here
       console.log('CANNOT LOG IN.', e);
-      alert('CANNOT LOG IN!')
+      alert('CANNOT LOG IN!');
     }
-  }
+  };
 
   return (
     <div
@@ -63,7 +65,7 @@ const Login = ({setUser}) => {
               className="form-control"
               id="inputEmail"
               placeholder="Email"
-              onChange={(e) => setUserData((current) => ({...current, 'email': e.target.value}))}
+              onChange={(e) => setUserData((current) => ({ ...current, email: e.target.value }))}
             />
           </div>
         </div>
@@ -77,7 +79,7 @@ const Login = ({setUser}) => {
               className="form-control"
               id="inputPassword"
               placeholder="Password"
-              onChange={(e) => setUserData((current) => ({...current, 'password': e.target.value}))}
+              onChange={(e) => setUserData((current) => ({ ...current, password: e.target.value }))}
             />
           </div>
         </div>
@@ -101,7 +103,7 @@ const Login = ({setUser}) => {
         <div className="d-flex pt-3 ">
           <button type="submit" className="btn btn-danger w-100">
             <Link to="/loginadmin" className="text-decoration-none">
-                <span>Login as Admin</span>
+              <span>Login as Admin</span>
             </Link>
           </button>
         </div>

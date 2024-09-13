@@ -10,6 +10,7 @@
     background: linear-gradient(135deg, #a52a2a, #b22222); /* Gradient background */
     border: none;
     border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }
 
 form label{

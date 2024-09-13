@@ -21,6 +21,7 @@ form label{
     margin-bottom: 0.5rem;
     font-weight: bold;
     color: #f5f5f5; /* Light text color */
+    display: block;
 }
 
 
